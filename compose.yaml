@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    ports:
+      - 5432:5432
+      - 8000:8000
+    env_file:
+      - .env
+    volumes:
+      - type: bind
+        source: ./rag/backend
+        target: /app/backend
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    ports:
+      - 8501:8501
+    env_file:
+      - .env
+    depends_on:
+      - backend
+    environment:
+      - BACKEND_URL=http://backend:8000
+    volumes:
+      - type: bind
+        source: ./rag/frontend
+        target: /app/frontend
