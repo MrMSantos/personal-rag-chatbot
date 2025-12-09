@@ -57,12 +57,6 @@ class VectorDB:
         # finally, return the top N most relevant chunks
         return similarities[:top_n]
 
-    def generate_prompt(self, retrieved_knowledge, input_query):
-        prompt = f"Use the following pieces of information to help you answer \
-            the question like if you were a pirate:\
-            {' '.join([f' - {chunk}' for chunk, _ in retrieved_knowledge])} Question: {input_query}"
-        return prompt
-
     def cosine_similarity(self, a, b):
         a = a.squeeze()
         b = b.squeeze()
