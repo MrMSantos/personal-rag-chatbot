@@ -17,4 +17,12 @@ Setup your Postgres parameters and HuggingFace API Key under .env file. Start by
 ```
 cp .env.template .env
 ```
-Fill `HUGGINGFACE_API_KEY` with your own key.
+Fill `HUGGINGFACE_API_KEY` with your own key and all database related parameters.
+
+### Run
+
+To run the application build run docker compose by running:
+```
+docker compose build
+docker compose up
+```
