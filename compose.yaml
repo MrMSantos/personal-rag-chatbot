@@ -10,8 +10,11 @@ services:
       - .env
     volumes:
       - type: bind
+        source: ./rag/api
+        target: /app/rag/api
+      - type: bind
         source: ./rag/backend
-        target: /app/backend
+        target: /app/rag/backend
   frontend:
     build:
       context: .
@@ -27,4 +30,4 @@ services:
     volumes:
       - type: bind
         source: ./rag/frontend
-        target: /app/frontend
+        target: /app/rag/frontend
