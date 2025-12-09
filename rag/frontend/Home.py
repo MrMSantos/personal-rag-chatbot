@@ -13,12 +13,12 @@ load_dotenv()
 create_sidebar()
 
 # Page title
-st.set_page_config(page_title="Tennis Chatbot", page_icon=":tennis:")
+st.set_page_config(page_title="Personal RAG Chatbot", page_icon=":rocket:")
 
-st.title(":tennis: Tennis Chatbot")
+st.title(":rocket: Personal RAG Chatbot")
 
 # Get user question
-user_question = st.chat_input("Ask me anything about tennis")
+user_question = st.chat_input("Ask me anything!")
 
 args = {
     "question": user_question,
