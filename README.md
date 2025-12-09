@@ -10,3 +10,11 @@ Add documents to a vectorized database and ask it some questions in a streamlit 
 - Postgres
 - pgvector
 - Docker
+
+### Configuration
+
+Setup your Postgres parameters and HuggingFace API Key under .env file. Start by running:
+```
+cp .env.template .env
+```
+Fill `HUGGINGFACE_API_KEY` with your own key.
