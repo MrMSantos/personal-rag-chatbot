@@ -14,7 +14,6 @@ create_sidebar()
 
 # Page title
 st.set_page_config(page_title="Tennis Chatbot", page_icon=":tennis:")
-a
 
 st.title(":tennis: Tennis Chatbot")
 
