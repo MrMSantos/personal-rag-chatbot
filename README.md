@@ -9,7 +9,6 @@ Add documents to a vectorized database and ask it some questions in a streamlit 
 - Python 3.11+
 - Postgres
 - pgvector
-- Docker
 
 ### Configuration
 
