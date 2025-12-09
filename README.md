@@ -18,7 +18,7 @@ cp .env.template .env
 ```
 Fill `HUGGINGFACE_API_KEY` with your own key and all database related parameters.
 
-### Run
+### Setup
 
 To run the application build run docker compose by running:
 ```
