@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 RUN pip install --upgrade --no-cache-dir -U pip uv
 
-COPY pyproject.toml ./
+COPY pyproject.toml uv.lock ./
 
 RUN uv sync --no-cache
 
